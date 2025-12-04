@@ -1,0 +1,974 @@
+/****** General ***********/
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+:root {
+    --main-color: #0065FC;
+    --main-bg-color: #F2F2F2;
+    --filter-bg-color: #DEEBFF;
+}
+
+.fa-solid {
+    color: var(--main-color);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.main-container {
+    width: 1920px;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 0px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+.logo{
+    width: 61.09px;
+    height: 19px;
+}
+
+.topHead {
+    display: flex;
+}
+
+.informationandsearch{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 68px;
+    margin-top: 8px;
+    margin-bottom: 50px;
+    font-size: 16px;
+}
+
+.magnifying-glass {
+    display: none;
+}
+
+.fa-location-dot {
+    color:#0a0a0a;    
+}
+
+.recherche{
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    overflow: hidden;
+    max-width: 360px;
+    margin: 0;
+    padding-top: 30px;
+}
+
+.iconeInformation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 49px;
+    border-width: 1px;
+    border-radius: 15px 0 0 15px;
+    background: var(--main-bg-color);
+    font-size: 18px;
+    flex-shrink: 0; /*Ne retrecie pas*/
+}
+
+.recherche input {
+    flex: 1;
+    border: 1px solid #ddd;
+    padding: 10px;
+    font-size: 16px;
+    min-width: 0;
+    min-height: 25px;
+}
+
+.recherche input:focus {
+  outline: none;
+}
+
+.recherche button {
+    background: var(--main-color);
+    border: none;
+    padding: 15px 16px;
+    cursor: pointer;
+    flex-shrink: 0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.recherche button:hover {
+  background: var(--main-color)
+}
+
+.txt-recherche {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+.button-icon{
+    display: none;
+}
+
+.button{
+	display: flex;
+  	flex-direction: row; /* met les éléments en ligne */
+  	align-items: center;    /* centre horizontalement */
+  	gap: 10px;              /* espace entre les boutons */
+    padding-bottom: 20px;
+}
+
+.buttons i{
+    margin-right: 6px;
+}
+
+.buttons {
+	display: flex;
+	width: 173px;
+	height: 50px;
+	align-items: center;
+	justify-content: center;
+	padding: 4px 10px 4px 6px;
+	background-color: white;
+	border-style: solid;
+	border-color: darkgrey;
+	border-width: 1px;
+	border-radius: 25px;
+	box-sizing: border-box;
+	font-family: 'Raleway', sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 100%;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.buttons:hover {
+    background-color: #DEEBFF; /* Bleu au survol */
+}
+
+.hebergements-and-populaires {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding-top: 20px;
+}
+
+.hebergements-and-populaires section {
+    border-radius: 20px;
+    padding: 30px;
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    background-color: var(--main-bg-color);
+}
+
+.hebergements-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hebergements-cards .card {
+    display: flex;
+    margin-top: 33px;
+}
+
+.hebergements-cards img {
+    width: 63%;
+    height: 136px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.hebergements-cards .card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 67%;
+    object-fit: cover;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+
+.hebergements-cards .card-title {
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.hebergements-cards .card-subtitle {
+    margin: 0;
+}
+
+.hergementsHotel {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.1);
+    row-gap: 4px;
+    
+}
+
+.vignettes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+
+.bedroom{
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 0px 0px 6px 0px #0000002e;
+    padding-bottom: 15px; /*Epaisseur basse des vignettes */
+    background-color: white;
+}
+
+.bedroom img{
+    background-size: cover;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+}
+
+.bedroomInfo{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+.h2 {
+    font-size: 22px;
+    padding-bottom: 10px;
+}
+
+.hotelTitle{
+    margin-top: 5px;
+    margin-bottom: 1px;
+    font-size: 16px;   
+}
+
+.prices{
+    margin-top: 2px;
+}
+
+.hrefMention{
+    display: flex;
+    font-size: 18px;
+    width: 100%;
+    height: 21px;
+    padding-top: 15px;
+}
+
+.populaires {
+    background-color: var(--main-bg-color);
+}
+
+.populaires-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.populaires-cards{
+    display: grid;
+    gap: 30px;
+}
+
+.populaires-cards .card {
+    display: flex;
+}
+
+.populaires-cards img {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.populaires-cards .card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0px 5px 5px 10px;
+}
+
+.populaires-cards .card-title {
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.populaires-cards .card-subtitle {
+    margin: 0;
+}
+
+.populaires-cards .star {
+    margin-bottom: 5px;
+}
+
+.section-title {
+    padding-bottom: 15px;
+    font-size: 22px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.card img {
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 16px;
+}
+
+.euro {
+    font-weight: 700;
+}
+
+.neutral-star {
+    color: var(--main-bg-color)
+}
+
+.activitesMarseille {
+    height: auto;
+    margin-top: 50px;
+}
+
+.lesActivites {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.activites {
+    background-color: white;
+    box-shadow: 8px 8px 11px -6px #0000002e;
+    border-radius: 20px;
+}
+
+.activites img {
+    object-fit: cover;        /* recadre sans déformer */
+    border-radius: 20px 20px 0 0;
+}
+
+.activitesMarseille h2 span {
+    font-size: 20px;
+}
+
+.activitesMarseille h2 {
+    font-size: 22px;
+}
+
+.footer {
+  display: flex;              /* aligne les blocs côte à côte */
+  flex-wrap: wrap;
+  background-color: var(--main-bg-color);
+}
+
+.footer-block {
+  flex: 1;                    /* chaque bloc prend la même largeur */
+}
+
+.footer-block h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.footer-block ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-block li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.footer-block a {
+  text-decoration: none;
+  color: #333;
+}
+
+.footer-block a:hover {
+  text-decoration: underline;
+}
+/*##########################################################################################################################################################################################################*/
+/*#####################################################################################  FORMAT 1025px X 1440 px  ##########################################################################################*/
+/*##########################################################################################################################################################################################################*/
+/* Medium devices (Screen less/equal than 1440px) */
+@media (min-width: 1025px) and (max-width: 1440px){
+
+.main-container {
+    width: 1440px;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 0px;
+}
+
+body {
+    margin-left: 50px;
+    margin-right: 140px;
+}
+
+.topHead {
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+}
+
+.nav-links a {
+    position: relative;   /* nécessaire pour placer le ::before */
+    text-decoration: none;
+    color: black;
+}
+
+.nav-links a::before{
+    content: "";
+    position: absolute;
+    top: -8px;            /* au-dessus du texte */
+    transform: translateX(-50%); /* centré */
+    width: 113px;          /* largeur fixe du trait */
+    height: 2px;
+    left: 50%; 
+    background: var(--main-color);
+    opacity: 0;           /* invisible au repos */
+    transition: opacity 0.3s ease;
+} 
+
+.nav-links a:hover::before{
+    opacity: 1;           /* visible au survol */
+}
+
+.mention {
+    font-size: 16px;
+}
+
+/*##################### ZONE HOTEL #######################*/
+
+.bedroom{
+    width: 100%;
+    height: 218px;
+    gap: 4px;
+}
+
+.bedroom img{
+    height: 150px;
+    max-width: 100%;
+    max-height: 100%;
+    padding:1px;
+}
+
+.stars{
+    margin: 15px 7px -21px 1px;
+}
+
+.populaires-cards img {
+    width: 123px;
+    height: 146px;
+}
+
+/*############## ACTIVITES MARSEILLE #######################################*/
+
+/*support carte*/
+.activites {
+    display: flex;
+    flex-direction: column;
+}
+
+.activites img {
+  width: 290px;             /* largeur identique */
+  height: 300px;            /* hauteur identique */
+  display: block;
+}
+
+.activites h6 {
+    font-size: 16px;
+    margin: 10px 19px 10px 19px;
+}
+
+.activitesMarseille h2 {
+    padding-left: 30px;
+}
+
+/*############################### FOOTER #####################################*/
+
+.footer {
+  justify-content: space-around; /* espace équilibré */
+  padding-left: 50px;
+  margin-top: 30px;
+  padding-top: 30px;
+}
+
+}
+
+/* Le code ci-dessous correspond à la version responsive uniquement */
+/*##########################################################################################################################################################################*/
+/*####################################################################### MEDIA QUERIES TABLETTE ####################################################################################*/
+/*##########################################################################################################################################################################*/
+
+/* Medium devices (tablets, less/equal than 1024px) */
+@media (max-width: 1024px) and (min-width: 768px){
+
+body {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.topHead {
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+}
+
+.informationandsearch{
+    width: 90%;
+}
+
+.nav-links a {
+    position: relative;   /* nécessaire pour placer le ::before */
+    text-decoration: none;
+    color: black;
+}
+
+.nav-links a::before{
+    content: "";
+    position: absolute;
+    top: -8px;            /* au-dessus du texte */
+    transform: translateX(-50%); /* centré */
+    width: 113px;          /* largeur fixe du trait */
+    height: 2px;
+    left: 50%; 
+    background: var(--main-color);
+    opacity: 0;           /* invisible au repos */
+    transition: opacity 0.3s ease;
+} 
+
+.nav-links a:hover::before{
+    opacity: 1;           /* visible au survol */
+}
+
+/*Zone des filtres*/
+/*Formatage des boutons*/
+/*Mise en place des boutons pour les filtres*/
+.button{
+    width: 90%;
+}
+
+.mention{
+    display: flex;
+    font-size: 16px;
+    width: 90%;
+    height: 21px;
+    padding-top: 15px;
+    gap: 10px;
+}
+
+/*################## Hebergements And Populaires ###############*/
+.hebergements-and-populaires {
+    flex-direction: column;
+}
+
+/*##################### ZONE HOTEL #######################*/
+
+.bedroom{
+    max-width: 100%;
+    gap: 4px
+}
+
+.bedroom img{
+    width: 268px;
+    height: 124px;
+    padding:3px;
+    max-width: 98%;
+}
+
+.stars{
+    margin: 15px 7px -7px 1px;
+}
+
+/*################ REDIMENSIONNEMENT DES + POPULAIRES ####################*/
+
+.populaires-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.populaires-cards .card {
+    width: 274px;
+    height: 146px;
+    max-width: 100%;
+}
+
+.populaires-cards img {
+    width: 91px;
+    height: 146px;
+}
+/*############## ACTIVITES MARSEILLE #######################################*/
+
+/*support carte*/
+.activites {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    height: 100%;
+    width: 208px;
+}
+
+.activites img {
+    width: 208.5px;             /* largeur identique */
+    height: 200px;            /* hauteur identique */
+    display: block;
+    max-width: 100%;
+}
+
+.activites h6 {
+    font-size: 16px;
+    margin: 10px 19px 10px 19px;
+}
+
+/*############################### FOOTER #####################################*/
+
+.footer {
+  justify-content: space-around; /* espace équilibré */
+  padding-left: 50px;
+  margin-top: 30px;
+  padding-top: 30px;
+}
+
+}
+
+/*##########################################################################################################################################################################*/
+/*####################################################################### MEDIA QUERIES PHONES ####################################################################################*/
+/*##########################################################################################################################################################################*/
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+.topHead {
+    justify-content: center;
+    padding-bottom: 50px;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.logo img {
+    margin-top: 12px;
+    margin-left: 48px;
+}
+
+.nav-links {
+    position: absolute;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    width: 100%;
+    max-width: 100%;
+    gap: 0;
+}
+
+.nav-links ::before{
+    display: none;    
+} 
+
+.lien{
+    border-bottom: 3px solid var(--main-bg-color);
+}
+
+.lien:hover {
+    border-bottom: 3px solid var(--main-color);
+    color: var(--main-color);   
+}
+
+a.lien:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+a.lien:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.lien::before {
+    transform: scaleX(1);
+    background: #ffffff;
+}
+
+.informationandsearch{
+    margin-left: 50px;
+}
+
+.text-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.loupe-blanche{
+    color: white;
+}
+/*Retire le mot "Recherche" et affiche uniquement la loupe */
+.txt-recherche {
+   display: none;
+}
+
+.recherche {
+    width: 100%;
+    max-width: 88%;
+    justify-content: center;
+}
+
+.zone-recherche {
+    /*flex: 1;*/
+    display: flex;
+    flex-direction: row;
+    width: 377px;
+    height: 49px;
+}
+
+.recherche span {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.buttonSearch{
+    width: 50px;
+    height: 49px;
+    background-color: var(--main-color);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    outline: none;
+    border: none;
+}
+
+.button-text{
+    display: inline;
+}
+
+input[type='submit'] {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+    padding-right: 16px;
+    Gap: 10px;
+    margin: right;
+    border-radius: 0 15px 15px 0; 
+    color:white;
+  	font-style: normal;
+	font-weight: 600;
+	font-size: 14px; 
+}
+
+.center-placeholder::placeholder {
+  text-align: center;
+}
+
+/* Positionnement du label "Filtre" pour les tel port. */
+.label{
+    grid-column: 1/3;
+    grid-row: 1;
+}
+
+.button {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    column-gap: 100px;
+    max-width: 83%;
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+    row-gap: 20px;
+}
+
+.buttons i{
+    margin-right: 8px;
+}
+
+.buttons {
+    width: 100%;
+    height: 51px;
+    max-width: 100%;
+}
+
+/*####################### HEBERGEMENTS A MARSEILLE ########################*/
+.hebergements-and-populaires {
+    flex-direction: column-reverse;
+    width: 100%;
+    gap: 0px;
+}
+
+.hebergements-and-populaires section {
+    width: 100%;
+    margin-left: 0px;
+    padding-left: 50px;
+    border-radius: 0px;
+    padding-top: 15px;
+}
+
+.hergementsHotel {
+    flex-wrap: wrap;
+    align-content: center;
+    background-color: white;
+}
+
+.bedroom{
+    width: 100%;
+    padding-bottom: 28px;
+}
+
+.bedroom img{
+    height: 124px;
+    width: 100%;
+    max-width: 100%;
+    padding: 3px;
+    object-fit: cover;
+}
+
+.prices{
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+.stars {
+    margin: 25px 7px -21px 1px;
+}
+
+.card-txt{
+  font-size: 12px;
+}
+
+.vignettes {
+    display: flex;
+    flex-direction: column;
+    width: 94%;
+    gap: 30px;
+    padding-top: 15px;
+}
+
+.hebergementsHref span b {
+    font-size: 16px;
+}
+
+.h2{
+    padding-bottom: 0px;
+}
+
+.mention{
+    margin-left: 50px;
+    padding-bottom: 15px;
+}
+/*####################### LES + POPULAIRES ########################*/
+.populaires {
+    width: 100%;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+.populaires-cards{
+    justify-content: normal;
+    padding-top: 30px;
+    padding-right: 0px;
+    padding-bottom: 30px;
+    padding-left: 0px;
+    max-width: 93%;
+    width: 100%;
+}
+
+.populaires-title {
+    width: 90%;
+}
+
+.populaires-cards .card {
+    margin-top: 6px;
+    width: 100%;
+    height: 146px;
+    justify-items: center;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.populaires-cards img {
+    width: 50%;
+}
+
+.populaires-cards .card-title {
+    font-size: 16px;
+    padding-bottom: 8px;
+    padding-top: 5px;
+}
+
+.populaires-cards .card-subtitle {
+    font-size: 14px;
+}
+
+/*####################### Activites à Marseille ###########################*/
+.activitesMarseille h2 {
+    font-size: 20px;
+}
+
+.activitesMarseille {
+    width: 90%;
+    margin-top: 50px;
+    margin-left: 50px;  
+}
+
+.lesActivites {
+    display: flex;
+    flex-direction: column;
+    width: 96%;
+    padding-top: 30px;
+}
+
+.activites {
+    margin-bottom: 30px;
+}
+
+.activites img {
+    width: 100%;
+    height: 150px;
+}
+
+.activites h6 {
+    padding: 19px 1px 19px 18px;
+}
+/*####################### PIED DE PAGE ###########################*/
+
+.footer {
+    flex-direction: column;
+    list-style: none;
+    width: 100%;
+    height: auto;
+}
+
+.footer-block {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 50px;
+}
+
+li {
+    padding-bottom: 10px;
+}
+
+}
