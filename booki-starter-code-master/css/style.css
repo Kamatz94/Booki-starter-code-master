@@ -253,7 +253,7 @@ a {
 
 .h2 {
     font-size: 22px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 .hotelTitle{
@@ -375,6 +375,7 @@ a {
 
 .activitesMarseille h2 {
     font-size: 22px;
+    padding-bottom: 20px;
 }
 
 .footer {
@@ -451,6 +452,10 @@ a {
     opacity: 1;           /* visible au survol */
 }
 
+.nav-links a:hover {
+    color: var(--main-color);
+}
+
 .mention {
     font-size: 16px;
 }
@@ -488,9 +493,9 @@ a {
 }
 
 .activites img {
-  width: 290px;             /* largeur identique */
-  height: 300px;            /* hauteur identique */
-  display: block;
+    height: 439px;  /* largeur identique */ 
+    width: 337px;   /* hauteur identique */
+    display: block;
 }
 
 .activites h6 {
@@ -654,6 +659,12 @@ body {
 /*##########################################################################################################################################################################*/
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+
+/*Test délimitation des zones*/
+/* * {*/
+/*  outline: 1px solid red; /* ou border */
+/*}*/
+
 
 .topHead {
     justify-content: center;
@@ -950,14 +961,13 @@ input[type='submit'] {
 .footer {
     flex-direction: column;
     list-style: none;
-    width: 100%;
+    width: 94%;
     height: auto;
 }
 
 .footer-block {
     padding-top: 20px;
     padding-bottom: 20px;
-    margin-left: 50px;
 }
 
 li {
