@@ -168,6 +168,7 @@ a {
     justify-content: space-between;
     gap: 40px;
     padding-top: 20px;
+    background-color: var(--main-bg-color);
 }
 
 .hebergements-and-populaires section {
@@ -176,7 +177,7 @@ a {
     max-width: 100%;
     height: auto;
     box-sizing: border-box;
-    background-color: var(--main-bg-color);
+
 }
 
 .hebergements-title {
@@ -216,7 +217,7 @@ a {
     margin: 0;
 }
 
-.hergementsHotel {
+.hebergementsHotel {
     display: flex;
     flex-direction: column;
     box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.1);
@@ -827,22 +828,23 @@ input[type='submit'] {
     padding-left: 50px;
     border-radius: 0px;
     padding-top: 15px;
+
 }
 
-.hergementsHotel {
+.hebergementsHotel {
     flex-wrap: wrap;
     align-content: center;
     background-color: white;
 }
 
 .bedroom{
-    width: 100%;
+    width: 97%;
     padding-bottom: 28px;
 }
 
 .bedroom img{
     height: 124px;
-    width: 100%;
+    width: 99%;
     max-width: 100%;
     padding: 3px;
     object-fit: cover;
@@ -875,6 +877,7 @@ input[type='submit'] {
 
 .h2{
     padding-bottom: 0px;
+    padding-left: 0px;
 }
 
 .mention{
@@ -899,7 +902,7 @@ input[type='submit'] {
 }
 
 .populaires-title {
-    width: 90%;
+    width: 96%;
 }
 
 .populaires-cards .card {
@@ -940,8 +943,9 @@ input[type='submit'] {
 .lesActivites {
     display: flex;
     flex-direction: column;
-    width: 96%;
+    width: 93%;
     padding-top: 30px;
+    padding-left: 20px;
 }
 
 .activites {
