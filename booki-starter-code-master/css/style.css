@@ -1,10 +1,10 @@
-/*##### Release global (tout format) #####*/
+/*##### Minor release (tout format) #####*/
     /*Création de l'arrondis sur le solid "i" pour conformité avec la maquette*/
     /*Mise aux dimensions exacts des zones, vignettes et photos*/
     /*Mise en place des gaps conformes aux maquettes afin de gérer les espacements*/
     /*Passage du html et css au W3C validateur sans erreur ni warning*/
 
-/*##### Release version téléphone portable #####*/
+/*##### Minor release (version téléphone portable) #####*/
     /*Gestion du background color (white) pour la partie "Hébergement à Marseille"*/
     /*Réajustement des marges pour alignement parfait de toutes sections*/
     /*Retrait des "h6" et remplacement par des "h4"*/
